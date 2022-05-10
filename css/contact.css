@@ -1,0 +1,198 @@
+/* feuille de style pour contact.html */
+/* google fonts : font-family: 'Advent Pro', sans-serif; font-family: 'Roboto', sans-serif; */
+
+body {
+    background-color: #333;
+    font-family: 'Advent Pro', sans-serif;
+}
+
+* {
+    box-sizing: border-box; 
+}
+
+#page {
+    margin: 0 auto; /* centrer la page */
+    background-color: #38342e;
+    color: yellowgreen;
+    width: 960px;
+    border: 1px solid yellowgreen;
+}
+
+/************* header ************/
+.hero {
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 0;
+}
+
+/* logo */
+.hero #logo {
+    width: 150px;
+    text-align: center;
+    padding: 1%;
+}
+
+/* image de fond */
+.hero #titles {
+    height: 350px;
+    width: 810px;
+    background: url(../img/pots-350.png) no-repeat center;
+    background-size: cover;
+}
+
+/* titre h1 */
+.hero #titles #title {
+    font-size: 3.8em;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgb(26, 26, 26); /* ombre sur le titre */
+}
+
+/************* menu ************/
+#navbar {
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 600;
+    width: 15%;
+    border: 1px solid yellowgreen;
+    padding: 1%;
+    
+}
+
+/* survol du menu et transition */
+#navbar a:hover {
+    background-color: yellowgreen;
+    transition: ease 1s;
+}
+
+/************* container ************/
+#container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+#container #form_title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 3em;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+#container .section {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 1%;
+    width: 45%;
+    border: 1px solid yellowgreen;
+}   
+
+#container .section #formContainer {
+    display: flex; 
+    flex-direction: column; 
+}
+
+#container .section #formContainer .label {
+    color: #fff;
+    text-align: end;
+    padding: 1%;
+}
+
+.items, .itemsE {
+    padding: 1% 0;
+}
+
+.items {
+    display: flex;
+}
+
+/* aligner les labels */
+.items .label {
+    flex: 1;
+}
+
+/* aligner les inputs */
+.items input {
+    flex: 3;
+    margin-right: 30%;
+}
+
+/* placer le bouton d'envoi à droite */
+#container .section #formContainer .itemsE {
+    align-self: end;
+}
+
+/* bouton d'envoi */
+input[type=submit] {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    background-color: yellowgreen;
+    color: #333;
+    border: 1px solid #333;
+    cursor:pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgba(153, 205, 50, 0.781);
+}
+
+/************* footer ************/
+#footer {
+    height: 70px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border-top: 1px solid yellowgreen;
+}
+
+#footer p {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-end;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+/************* media queries pour les écrans inférieurs à 800px ************/
+
+@media (max-width: 800px) {
+    /* éléments en pleine largeur */
+    #page, .nav, #container .section {
+        width: 100%;
+    }
+
+    /* positionner le titre */
+    .hero #titles #title {
+        position: absolute;
+        top: 100px;
+        right: -1px;
+        padding: 3% 5% 3% 17%;
+        line-height: 1em;
+        text-align: left;
+    }
+
+    /* positionner le menu en colonnes */
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    /* appliquer les marges */
+    #navbar, #container .section {
+        margin: 3% 1%;
+    }
+}

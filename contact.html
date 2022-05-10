@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- balise meta pour le référencement naturel -->
+    <meta name="description" content="Découvrez Inter's' votre site de décoration intérieure sur mesure : chambre, salon, salle de bain, cuisine, terrasse">
+    <meta name="author" content="cf">
+    <title>Inter's : votre déco sur mesure</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;700&family=Roboto&display=swap" rel="stylesheet"> 
+    <!-- css pour contact.html -->
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <div id="page">
+        <!-- header -->
+        <header class="hero">
+            <div id="logo">
+                <a href="index.html"><img src="img/logo-inters.png" alt="Logo Inter's"></a>
+            </div>
+            <div id="titles">
+                <h1 id="title">Inter's : votre déco sur mesure</h1>
+            </div>
+        </header>
+        <!-- navbar -->
+        <nav id="navbar">
+            <a class="nav" href="salons.html">Salons</a>
+            <a class="nav" href="chambres.html">Chambres</a>
+            <a class="nav" href="sdb.html">Salles de bain</a>
+            <a class="nav" href="cuisine.html">Cuisine</a>
+            <a class="nav" href="terrasses">Terrasses</a>
+        </nav>
+        <!-- main -->
+        <main id="container">
+            <section class="section">
+                <h2 id="form_title">Recevez la newsletter</h2>
+                <form action="#" id="formContainer" method="POST" enctype="multipart/form-data">
+                    <div class="items">
+                        <label class="label" for="nom">Nom :</label>
+                        <input id="nom" name="nom" type="text" required>
+                    </div>
+                    <div class="items">
+                        <label class="label" for="prenom">Prénom :</label>
+                        <input id="prenom" name="prenom" type="text" required>
+                    </div>
+                    <div class="items">
+                        <label class="label" for="email">Mail :</label>
+                        <input type="email" name="email" size="20" maxlength="40" id="email" required/>
+                    </div>
+                    <div class="itemsE">
+                        <input type="submit" name="envoyer" value="Envoyer le formulaire" />
+                    </div>
+                </form>
+            </section>
+        </main>
+        <!-- footer -->
+        <footer id="footer">
+            <p>Merci de votre confiance</p>
+        </footer>
+    </div>
+</body>
+</html>
