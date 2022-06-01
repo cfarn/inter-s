@@ -1,6 +1,6 @@
 # inter-s
  
- Intégration de pages web responsives en HTML5 et CSS3
+ Réalisation de pages web responsives en HTML5 et CSS3
  
  Contenu : 
  - 1 page accueil  
